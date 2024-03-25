@@ -1,5 +1,5 @@
 import React from 'react'
-import { SiExpress, SiNextdotjs, SiNodedotjs, SiReact } from 'react-icons/si'
+import { SiExpress, SiMongodb, SiNestjs, SiNextdotjs, SiNodedotjs, SiReact, SiTailwindcss, SiTypescript } from 'react-icons/si'
 import Title from './Title'
 import Link from 'next/link'
 import { cn } from '@/lib/utils'
@@ -10,7 +10,7 @@ function Projects() {
     const projects = [
         {
             title: "Smart Home App",
-            tech: [SiReact,SiNodedotjs,SiExpress],
+            tech: [SiReact,SiNodedotjs,SiExpress,SiMongodb],
             link: 'https://smart-home-ui-ranuga.netlify.app/',
             cover: '/Smart-Home UI.png.png',
             background: "bg-green-500",
@@ -19,16 +19,24 @@ function Projects() {
         {
             title: "Chatbot using GPT API (provides answers as an experienced Software Engineer)",
             tech: [SiReact],
-            link: 'https://smart-home-ui-ranuga.netlify.app/',
+            link: 'https://gpt-react-chatbot.netlify.app/',
             cover: '/Chatbot with ChatGPT API.png',
             background: "bg-green-500",
         },
 
         {
             title: "Portfolio Website",
-            tech: [SiNextdotjs],
-            link: 'https://smart-home-ui-ranuga.netlify.app/',
+            tech: [SiNextdotjs,SiTypescript],
+            link: '',
             cover: '/Portfolio Website.png',
+            background: "bg-green-500",
+        },
+
+        {
+            title: "PCOS-FertiliCare",
+            tech: [SiNextdotjs,SiNestjs,SiMongodb,SiTailwindcss,SiTypescript],
+            link: 'https://smart-home-ui-ranuga.netlify.app/',
+            cover: '/PCOS-FertiliCare.png',
             background: "bg-green-500",
         },
 
