@@ -19,9 +19,9 @@ function Navbar({ className }: { className?: string }) {
     ];
 
     const navLinks = [
-        { label: "Skills", href: "#skills" },
-        { label: "Projects", href: "#projects" },
-        { label: "Blog", href: "#blog" },
+        { label: "Skills", href: "/skills" },
+        { label: "Projects", href: "/projects" },
+        { label: "Blog", href: "/blog" },
         { label: "Contact", href: "mailto:ranugaolitha1210@gmail.com" },
     ];
 
