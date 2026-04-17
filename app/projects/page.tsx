@@ -9,6 +9,33 @@ import {
     SiNodedotjs, SiOpenai, SiPython, SiReact, SiTailwindcss, SiTypescript
 } from 'react-icons/si'
 
+const LangChainIcon = ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <circle cx="7.5" cy="7.5" r="2.5"/>
+        <circle cx="16.5" cy="7.5" r="2.5"/>
+        <circle cx="7.5" cy="16.5" r="2.5"/>
+        <circle cx="16.5" cy="16.5" r="2.5"/>
+        <line x1="10" y1="7.5" x2="14" y2="7.5"/>
+        <line x1="10" y1="16.5" x2="14" y2="16.5"/>
+        <line x1="7.5" y1="10" x2="7.5" y2="14"/>
+        <line x1="16.5" y1="10" x2="16.5" y2="14"/>
+    </svg>
+)
+
+const HuggingFaceIcon = ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="currentColor">
+        <path d="M12 2C6.477 2 2 6.477 2 12s4.477 10 10 10 10-4.477 10-10S17.523 2 12 2zm-2.5 7.5a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm5 0a1 1 0 1 1 0 2 1 1 0 0 1 0-2zm-5.5 4.5h6s-.5 2.5-3 2.5-3-2.5-3-2.5z"/>
+    </svg>
+)
+
+const ChromaDBIcon = ({ className }: { className?: string }) => (
+    <svg className={className} viewBox="0 0 24 24" fill="none" stroke="currentColor" strokeWidth="1.8" strokeLinecap="round" strokeLinejoin="round">
+        <ellipse cx="12" cy="6" rx="8" ry="3"/>
+        <path d="M4 6v4c0 1.657 3.582 3 8 3s8-1.343 8-3V6"/>
+        <path d="M4 10v4c0 1.657 3.582 3 8 3s8-1.343 8-3v-4"/>
+    </svg>
+)
+
 const projects = [
     {
         index: "01",
@@ -16,7 +43,10 @@ const projects = [
         description: "A Python library published on PyPI for hybrid graph-cache memory in LLM applications. Combines LangChain, HuggingFace embeddings, Neo4j graph database, ChromaDB vector store, and OpenAI for intelligent context retrieval.",
         tech: [
             { Icon: SiPython, name: "Python" },
+            { Icon: LangChainIcon, name: "LangChain" },
+            { Icon: HuggingFaceIcon, name: "HuggingFace" },
             { Icon: SiNeo4J, name: "Neo4j" },
+            { Icon: ChromaDBIcon, name: "ChromaDB" },
             { Icon: SiOpenai, name: "OpenAI" },
         ],
         link: 'https://pypi.org/project/hgcachemem/',
@@ -24,6 +54,20 @@ const projects = [
     },
     {
         index: "02",
+        title: "PCOS-FertiliCare",
+        description: "A health-tech platform for PCOS management and fertility tracking. Full-stack app with a NestJS REST API, MongoDB database, and a Next.js + TypeScript frontend.",
+        tech: [
+            { Icon: SiNextdotjs, name: "Next.js" },
+            { Icon: SiNestjs, name: "NestJS" },
+            { Icon: SiMongodb, name: "MongoDB" },
+            { Icon: SiTailwindcss, name: "Tailwind" },
+            { Icon: SiTypescript, name: "TypeScript" },
+        ],
+        link: '',
+        cover: '/PCOS-FertiliCare.png',
+    },
+    {
+        index: "03",
         title: "Smart Home App",
         description: "A full-stack IoT dashboard for controlling smart home devices. Features real-time device management and an intuitive responsive UI, backed by a Node.js REST API with MongoDB.",
         tech: [
@@ -36,7 +80,7 @@ const projects = [
         cover: '/Smart-Home UI.png.png',
     },
     {
-        index: "03",
+        index: "04",
         title: "Chatbot using GPT API",
         description: "An AI-powered chatbot that responds as an experienced software engineer. Integrated with OpenAI's GPT API for intelligent, context-aware answers in a clean React interface.",
         tech: [
@@ -46,7 +90,7 @@ const projects = [
         cover: '/Chatbot with ChatGPT API.png',
     },
     {
-        index: "04",
+        index: "05",
         title: "Portfolio Website",
         description: "The portfolio you're looking at — built with Next.js and TypeScript, featuring a modern dark UI, Framer Motion animations, glassmorphism design, and a dedicated blog section.",
         tech: [
@@ -55,20 +99,6 @@ const projects = [
         ],
         link: 'https://ranuga-portfolio-website.vercel.app/',
         cover: '/Portfolio Website.png',
-    },
-    {
-        index: "05",
-        title: "PCOS-FertiliCare",
-        description: "A health-tech platform for PCOS management and fertility tracking. Full-stack app with a NestJS REST API, MongoDB database, and a Next.js + TypeScript frontend.",
-        tech: [
-            { Icon: SiNextdotjs, name: "Next.js" },
-            { Icon: SiNestjs, name: "NestJS" },
-            { Icon: SiMongodb, name: "MongoDB" },
-            { Icon: SiTailwindcss, name: "Tailwind" },
-            { Icon: SiTypescript, name: "TypeScript" },
-        ],
-        link: '',
-        cover: '/PCOS-FertiliCare.png',
     },
 ]
 
