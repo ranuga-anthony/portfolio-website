@@ -5,13 +5,25 @@ import Image from 'next/image'
 import Link from 'next/link'
 import { motion } from 'framer-motion'
 import {
-    SiExpress, SiMongodb, SiNestjs, SiNextdotjs,
-    SiNodedotjs, SiReact, SiTailwindcss, SiTypescript
+    SiExpress, SiMongodb, SiNeo4J, SiNestjs, SiNextdotjs,
+    SiNodedotjs, SiOpenai, SiPython, SiReact, SiTailwindcss, SiTypescript
 } from 'react-icons/si'
 
 const projects = [
     {
         index: "01",
+        title: "HGCacheMem",
+        description: "A Python library published on PyPI for hybrid graph-cache memory in LLM applications. Combines LangChain, HuggingFace embeddings, Neo4j graph database, ChromaDB vector store, and OpenAI for intelligent context retrieval.",
+        tech: [
+            { Icon: SiPython, name: "Python" },
+            { Icon: SiNeo4J, name: "Neo4j" },
+            { Icon: SiOpenai, name: "OpenAI" },
+        ],
+        link: 'https://pypi.org/project/hgcachemem/',
+        cover: '/browser based graph visualization.png',
+    },
+    {
+        index: "02",
         title: "Smart Home App",
         description: "A full-stack IoT dashboard for controlling smart home devices. Features real-time device management and an intuitive responsive UI, backed by a Node.js REST API with MongoDB.",
         tech: [
@@ -24,7 +36,7 @@ const projects = [
         cover: '/Smart-Home UI.png.png',
     },
     {
-        index: "02",
+        index: "03",
         title: "Chatbot using GPT API",
         description: "An AI-powered chatbot that responds as an experienced software engineer. Integrated with OpenAI's GPT API for intelligent, context-aware answers in a clean React interface.",
         tech: [
@@ -34,7 +46,7 @@ const projects = [
         cover: '/Chatbot with ChatGPT API.png',
     },
     {
-        index: "03",
+        index: "04",
         title: "Portfolio Website",
         description: "The portfolio you're looking at — built with Next.js and TypeScript, featuring a modern dark UI, Framer Motion animations, glassmorphism design, and a dedicated blog section.",
         tech: [
@@ -45,7 +57,7 @@ const projects = [
         cover: '/Portfolio Website.png',
     },
     {
-        index: "04",
+        index: "05",
         title: "PCOS-FertiliCare",
         description: "A health-tech platform for PCOS management and fertility tracking. Full-stack app with a NestJS REST API, MongoDB database, and a Next.js + TypeScript frontend.",
         tech: [
