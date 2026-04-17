@@ -27,7 +27,7 @@ function Projects() {
                 SiOpenai,
             ] as TechIcon[],
             link: 'https://pypi.org/project/hgcachemem/',
-            cover: '/browser based visualization.png',
+            cover: '/browser based graph visualization.png',
             background: "bg-green-500",
         },
 
